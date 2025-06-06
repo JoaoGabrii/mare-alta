@@ -1,0 +1,68 @@
+       /* Estilização básica do site */
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        header {
+            background-color: #1F3A52;
+        }
+
+        .title {
+            font-family: "Yellowtail", cursive;
+        }
+
+        .title-colored {
+            color: #1F3A52;
+        }
+
+        #inicio,
+        #cardapio {
+            background-color: #b4a07a;
+        }
+
+        #eventos,
+        #contatos {
+            background-color: whitesmoke
+        }
+
+        /* Edição de link do nav */
+        .nav .nav-link.active {
+            background-color: #E1A32A;
+        }
+
+        .nav .nav-link.active:hover {
+            color: #fff;
+        }
+
+        .nav .nav-link.active {
+            color: #000;
+        }
+
+        .nav .nav-link:hover {
+            color: #D16528;
+        }
+
+        .nav .nav-link {
+            color: #fff;
+        }
+
+        /* Estilizando botão do form */
+        form .btn {
+            background-color: #1F3A52;
+            color: #fff;
+        }
+
+        form .btn:hover {
+            background-color: #0f1d29;
+            color: #fff;
+        }
+
+        /* Estilizando links */
+        .social-links li {
+            list-style: none;
+            display: inline;
+        }
+
+        .social-links a {
+            text-decoration: none;
+        }
