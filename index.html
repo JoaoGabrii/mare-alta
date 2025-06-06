@@ -18,10 +18,10 @@
 
 <body>
 
-    <header class="navbar navbar-expand-lg sticky-top" id="menu">
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
         <div class="container">
             <h1 class="title text-white">Maré Alta</h1>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button type="button" class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu">
@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section id="inicio">
             <div id="carousel-exemple" class="carousel carousel-fade slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -170,7 +170,7 @@
                                 type="button">Drinks</button>
                             <button data-bs-toggle="tab" data-bs-target="#aba4" class="fw-bold nav-link"
                                 type="button">Petiscos</button>
-                            <button data-bs-toggle="tab" data-bs-target="#aba5" class="fw-bold nav-link"
+                            <button data-bs-toggle="tab" data-bs-target="#aba5" class="fw-bold nav-link mb-3"
                                 type="button">Hamburguers</button>
                         </nav>
                     </aside>
@@ -465,6 +465,16 @@
 
 
     <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                if (navbarToggler && navbarToggler.getAttribute('aria-expanded') === 'true') {
+                    navbarToggler.click();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
